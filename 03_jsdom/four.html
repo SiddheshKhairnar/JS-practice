@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sid | Dom last</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    addLanguage = (langName)=>{
+        const li =document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+
+
+    }
+    addLanguage("python")
+    addLanguage("C++")
+
+    addOptiLanguage = (langName)=>{
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("golang");
+
+    //This are the two ways to add new elements into your web page
+
+
+    //Edit 
+    const ed =document.querySelector("li:nth-child(2)")
+    // ed.innerHTML = "Mojo"
+    // console.log(ed)
+    const newli =document.createElement('li')
+    newli.textContent = "Sidd"
+    ed.replaceWith(newli)
+
+    //remove
+    const lastlan = document.querySelector('li:last-child')
+    lastlan.remove()
+</script>
+</html>
