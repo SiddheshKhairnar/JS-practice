@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Code</title>
+</head>
+<body>
+    <ul id="images">
+        <li><img src="https://images.pexels.com/photos/29469384/pexels-photo-29469384/free-photo-of-women-in-traditional-dresses-amidst-vibrant-lotus-field.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="not found" id="garden" width= 150px height = 150px </li>
+        <li><img src="https://images.pexels.com/photos/19546262/pexels-photo-19546262/free-photo-of-smiling-young-woman-using-laptop-sitting-on-sofa.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="not found" id="women" width= 150px height = 150px</li>
+        <li><img src="https://images.pexels.com/photos/9943963/pexels-photo-9943963.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="not found" id="garden" width= 150px height = 150px</li>
+        <li><a href="https://google.com">www.google.com</a></li>
+    </ul>
+<script>
+   //1st way //write directly in the li like onclick = "alert('clicked')"
+   //2nd way // document.getElementById("garden").onclick = ()=>{
+    //     alert("clicked on button")
+    // }
+    /*3rd way more preferrable*/
+    // document.getElementById('garden').addEventListener('click',function(e){      //addEventListener three parameters first event, then function and last is the bubble=false or capture=true that i
+    //     alert("clickrd");   
+    // },false) 
+
+
+
+
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
+   
+    
+    //document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.tagName);
+    //     if (e.target.tagName === 'IMG') {
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode
+    //         removeIt.remove()
+    //     }
+    
+        
+    // })
+</script>  
+</body>
+</html>
